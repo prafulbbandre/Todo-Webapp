@@ -1,13 +1,26 @@
 <div class="y-3">
-<h4>Add a Todo</h4>
-<form (ngSubmit)="onSubmit()" >
+  <h4>Add a Todo</h4>
+  <form (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label for="title" class="form-label">Todo Title</label>
-      <input type="text" [(ngModel)]="title" name="First" class="form-control" id="title" aria-describedby="title">
+      <input
+        type="text"
+        [(ngModel)]="title"
+        name="First"
+        class="form-control"
+        id="title"
+        aria-describedby="title"
+      />
     </div>
     <div class="mb-3">
       <label for="Desc" class="form-label">Todo Description</label>
-      <input type="Desc" class="form-control" name="second" id="Desc" [(ngModel)]="desc">
+      <input
+        type="Desc"
+        class="form-control"
+        name="second"
+        id="Desc"
+        [(ngModel)]="desc"
+      />
     </div>
     <button type="add-todo" class="btn btn-sm btn-primary">Add Todo</button>
   </form>
